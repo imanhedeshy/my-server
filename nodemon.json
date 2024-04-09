@@ -1,0 +1,6 @@
+{
+    "watch": ["src/**/*"],
+    "ext": "mts,json,ts",
+    "exec": "node --loader ts-node/esm app.mts"
+  }
+  

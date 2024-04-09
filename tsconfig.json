@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext", // Changed from "commonjs" to "ESNext"
+    "moduleResolution": "node",
+    "lib": ["es6", "dom"],
+    "allowJs": true,
+    "outDir": "./",
+    "rootDir": "./",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": false,
+    "emitDeclarationOnly": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

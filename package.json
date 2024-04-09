@@ -1,0 +1,19 @@
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "description": "A simple express server that offers mock api responses to test your frontend project",
+  "main": "app.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imanhedeshy/my-server.git"
+  },
+  "author": "Iman Hedeshy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imanhedeshy/my-server/issues"
+  },
+  "homepage": "https://github.com/imanhedeshy/my-server#readme"
+}
