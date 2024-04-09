@@ -1,33 +1,46 @@
+// {
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "moduleResolution": "node",
+//     "outDir": "./dist",
+//     "rootDir": "./src",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "skipDefaultLibCheck": true,
+//     "baseUrl": "./src",
+//     "paths": {
+//       "*": ["*", "*.mts"]
+//     }
+//   },
+//   "include": ["src/**/*"],
+//   "exclude": ["node_modules", "dist"],
+//   "resolveJsonModule": true
+// }
 {
   "compilerOptions": {
+    "types": ["node", "jest"],
     "target": "ESNext",
-    "module": "ESNext", // Changed from "commonjs" to "ESNext"
+    "module": "ESNext",
     "moduleResolution": "node",
-    "lib": ["es6", "dom"],
-    "allowJs": true,
-    "outDir": "./",
-    "rootDir": "./",
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "allowImportingTsExtensions": true,
-    "noEmit": false,
-    "emitDeclarationOnly": false,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*", "*.ts", "*.js"]
+    }
   },
-  "include": ["/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  // Allows importing of JSON modules.
+  "resolveJsonModule": true
 }

@@ -1,5 +1,7 @@
 import express, { Application } from 'express';
-import mainRouter from './routes/index.mts'; // Update the import paths as necessary
+import mainRouter from './routes/index.mts';
+
+const PORT = process.env.PORT || 8080;
 
 const app: Application = express();
 
@@ -14,7 +16,6 @@ app.get('*', (_req, res) => {
   res.send('Welcome to the Express server!');
 });
 
-const PORT = process.env.PORT || 5050;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
