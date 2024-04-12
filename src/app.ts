@@ -20,7 +20,7 @@ app.use(mainRouter);
 
 // Set up a default catch-all route that sends back a welcome message.
 app.get('*', (_req, res) => {
-  res.send('Welcome to the Express server!');
+  res.send('Welcome to the Express server! Add routes and data samples so that you can test the API.');
 });
 
 
